@@ -20,7 +20,7 @@ nobel <- read_csv("data-raw/nobel.csv")
 
 Then let's split the data into two:
 
-```{r label-me2, eval=FALSE}
+```{r create_dataframes, eval=FALSE}
 # stem laureates
 nobel_stem <- nobel %>%
   filter(category %in% c("Chemistry", "Economics", "Medicine", "Physics"))
@@ -32,7 +32,7 @@ nobel_nonstem <- nobel %>%
 
 And finally write out the data:
 
-```{r label-me3}
+```{r export_data}
 write_csv(nobel_stem, file = "data/nobel_stem.csv")
 
 write_csv(nobel_nonstem, file = "data/nobel_nonstem.csv")
