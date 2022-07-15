@@ -1,6 +1,6 @@
 Nobel winners
 ================
-Naomi Ekas
+Lillyan Shelley
 
 ``` r
 library(tidyverse)
@@ -9,7 +9,9 @@ library(tidyverse)
 Let’s first load the data:
 
 ``` r
-nobel <- ___(___)
+nobel <- read_csv("data-raw/nobel.csv")
+
+#once you put in the folder click tab to see what datasets you have in file
 ```
 
 Then let’s split the data into two:
